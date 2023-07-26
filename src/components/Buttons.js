@@ -11,7 +11,7 @@ const Buttons = (props) => {
     </button>
   );
 })}
-      <button>All Orbits</button>
+      <button onClick={() => { props.setSat(satData)}}>All Orbits</button>
       </div>
   );
 };
