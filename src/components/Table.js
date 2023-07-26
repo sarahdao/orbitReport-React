@@ -12,12 +12,12 @@ const Table = ({ sat }) => {
        <th>Status</th>
      </tr>
      </thead>
-     <tbody> {sat.map((id, data) => 
-     <tr> key = {id}
+     <tbody> {sat.map((data, id) => 
+     <tr key = {id}>
        <td>{data.name}</td>
        <td>{data.type}</td>
        <td>{data.launchDate}</td>
-       <td>{data.operational ? active : inactive}</td>
+       <td>{data.operational ? "active" : "inactive"}</td>
      </tr>
      )};
      </tbody>
